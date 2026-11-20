@@ -109,7 +109,7 @@ struct RouteGuideService: Routeguide_RouteGuide.SimpleServiceProtocol {
             if let previousPoint {
                 distanceTraveled += greatCircleDistance(from: previousPoint, to: point)
             }
-            
+            previousPoint = point
         }
         
         let duration = startTime.duration(to: .now)
