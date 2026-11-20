@@ -15,6 +15,8 @@ struct RouteGuide: AsyncParsableCommand {
     mutating func run() async throws {
         if server {
             try await runServer()
+        } else {
+            try await runClient()
         }
     }
     
