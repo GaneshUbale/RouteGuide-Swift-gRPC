@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RouteGuide}",
+            "name": "Debug RouteGuide",
+            "target": "RouteGuide",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug RouteGuide"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:RouteGuide}",
+            "name": "Release RouteGuide",
+            "target": "RouteGuide",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release RouteGuide"
+        }
+    ]
+}
